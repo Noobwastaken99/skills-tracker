@@ -1,6 +1,7 @@
 package org.launchcode.skillstracker.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -36,7 +37,7 @@ public class SkillsController {
         String html =
             "<html>" +
               "<body>" +
-                "<form action = '/list'>" +
+                "<form method = 'post'>" +
                   "<p style='font-size: 20px'>Name:</br>" +
                     "<input type = 'text' name = 'coder' />" +
                     "</br>My favorite language:</br>" +
@@ -59,7 +60,7 @@ public class SkillsController {
         return html;
     }
 
-    @GetMapping("list")
+    @PostMapping("form")
     public String coderList(@RequestParam String coder, String o1, String o2, String o3) {
         String html =
                 "<html>" +
