@@ -35,26 +35,26 @@ public class SkillsController {
             "</option>";
         String html =
             "<html>" +
-                "<body>" +
-                    "<form action = '/list'>" +
-                    "<p style='font-size: 20px'>Name:</br>" +
+              "<body>" +
+                "<form action = '/list'>" +
+                  "<p style='font-size: 20px'>Name:</br>" +
                     "<input type = 'text' name = 'coder' />" +
                     "</br>My favorite language:</br>" +
-                    "<select name = 'o1' >" +
+                      "<select name = 'o1' >" +
                         options +
-                    "</select>" +
+                      "</select>" +
                     "</br>My second favorite language:</br>" +
-                    "<select name = 'o2' >" +
+                      "<select name = 'o2' >" +
                         options +
-                    "</select>" +
+                      "</select>" +
                     "</br>My third favorite language:</br>" +
-                    "<select name = 'o3' >" +
+                      "<select name = 'o3' >" +
                         options +
-                    "</select>" + "</br>" +
+                      "</select>" + "</br>" +
                     "<input type = 'submit'/>" +
-                    "</p>" +
-                    "</form>" +
-                "</body>" +
+                  "</p>" +
+                "</form>" +
+              "</body>" +
             "</html>";
         return html;
     }
